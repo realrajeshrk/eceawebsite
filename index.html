@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>ECEA | home</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		
+		.back-image{
+    width:100%;
+    height:500px;
+    background-image: url("img/ecea11.jpg");
+	
+    background-size: 100% 100%;
+    border: 1px  ;
+	opacity:1;
+}
+		.inner-back-image{
+			
+    position:relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+ 
+    max-width: 660px;
+		}
+		.panel-default{background-color: #f5f5f5;
+		opacity:0.8;
+  
+  }
+
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.side{
+    height: 420px;
+	margin-left:90px;
+	margin-right:0px;
+}
+.button1 {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+  color:white;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+  
+}
+	 .blocks{
+	 height:250px;
+	 background-color:#757a82;
+	 color:white;
+	 margin-top:30px;
+	 border-width: thick;
+	 border-radius:30px;
+	 border-style: thin;
+	 border-color:grey;
+	 font-style:arial;
+	  width:100%
+	 }
+	  .blocks1{
+	 height:340px;
+	 background-color:#757a82;
+	 color:white;
+	 margin-top:30px;
+	 border-width: thick;
+	 border-radius:30px;
+	 border-style: thin;
+	 border-color:grey;
+	 width:100%;
+	 }
+	
+	 .ques-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/qp3.jpg");
+
+    /* Set a specific height */
+    height: 70%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+.space{
+      margin-left:90px;}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #FF782E;
+  color: white;
+  transform: rotateY(180deg);
+}
+'3;6
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+div {
+    margin-bottom: 15px;
+    padding: 4px 12px;
+}
+
+.danger {
+    background-color: #f9af81;
+    border-left: 6px solid #FF782E;
+}
+.bg{
+background-color:black;
+
+
+height:100%;
+width:100%;
+opacity:0.9;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align:center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:100px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+	text-decoration: none;
+	color:white;
+}
+.fa:visited {
+  color:white;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+
+
+.fa-instagram {
+  background: #5d04a0;
+  color: white;
+  
+}
+.thumbnail1{
+height:400px;
+width:300px}
+
+
+
+		</style>
+		
+ </head>
+ 
+
+<body >
+<!--<div class="container-fluid" style="background-color:#FF782E">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; DASHBOARD</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</div>-->
+<div class="container-fluid bg">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<a href="https://www.facebook.com/CEGECEA/" target="_blank" class="fa fa-facebook"></a>
+
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ceg.ecea19@gmail.com" target="_blank" class="fa fa-google"></a>
+
+<a href="https://www.instagram.com/ecea_ceg/" target="_blank" class="fa fa-instagram"></a>
+</div>
+</div></div>
+<div class="container">
+
+<div class="back-image">
+
+<div class="inner-back-image" style= "padding-top:100px;padding-bottom
+:400px">
+
+</div>
+<div class="container-fluid">
+<div class="danger">
+ <h1><strong><center>ABOUT US<center></strong></h1>
+<center><h4>ECEA is an embodiment and the working node that connects budding electronics engineers within the department. ECEA is basically a student organisation under the supervision of our respected HOD Mr Muttan.
+Electronics and Communication, being a field that grabs the spotlight in core engineering has given impetus to the organisation and a vital role in bringing together engineers not only within the university, but across colleges all over India.
+The ECEA has become a hub over years, by providing a platform for students to share their ideas and thoughts, and gaining further knowledge in their areas of interest. In order to bring about this, the student members of ECEA work diligently to conduct various inter and intra college events such as Vision, Resonance, Directivity, etc.
+
+</h4></center></div>
+</div>
+
+<div class="container row blocks1" >
+
+<center> <a href="vision.com" style="text-decoration:none;"><h1 style="color:black;">VISION</h1></a>
+<h3>Vision is the department symposium which is one 
+among the flowers in the garland of events that decorate our department. It takes place during the month of 
+March or during the even semester of every year. Various eminent sponsors, along with distinguished guests 
+make this event a grand success. Students from a variety of reputed colleges take part in a plethora of technical and non-technical events. The three day
+ event also comprises of mind boggling quizzes, intriguing seminars and riveting workshops. 
+Exciting cash prizes add flavour to the grandeur of the event.</h3>
+<br>
+<a class="button1" href="img/Coming-Soon.gif" style="text-decoration:none; margin-top:10px;"
+   type="button"><span>visit site</span>
+</a></center>
+
+</div>
+
+<div class="container row blocks" >
+<center> <h1 style="color:black">RESONANCE</h1>
+<h3>Resonance is an intra-college technical event that takes place during every odd semester of an academic year. This event provides a rostrum for students from within the department to unleash their technical prowess by taking part in paper presentations, seminars, workshops and a medley of technical events.</h3>
+</center></div>
+<div class="container row blocks" >
+<center> <h1 style="color:black">DIRECTIVITY</h1>
+<h3>Just as the name suggests, this event is an initiative especially for the fresh and incoming ECE students. Through directivity, student members get 
+introduced to their department and their department seniors. It enables freshers to understand the milestones they can achieve through their fields of interest and clarify their doubts by consulting their seniors and make use of their expertise.
+ 
+</h3></center>
+</div>
+<hr>
+<div class="container" style="height:20px;"><h1 style="color:white"><strong>ACADEMICS</h1></div>
+<div class="container-fluid" style="margin-top:100px;height:7.5%">
+
+<div class="row" style="height:10px;"  >
+
+
+<!--<div class="col-xs-5 col-xs-offset-1   side" style="height:200px; " >
+  <div class="ques-image">
+  <div class="hero-text">
+    <h2>Carrier Guidance</h2>
+    <a href="#" class="btn btn-warning"   type="button" style="font-size:20px;color:black; background-color:#c3c3c3;">view</a>
+  </div>
+</div>
+</div>-->
+<div class="col-xs-3 col-xs-offset-1   side" style="height:200px">
+   <div class="ques-image">
+  <div class="hero-text">
+    <h2>Subjectwise Notes</h2>
+    <a href="https://drive.google.com/drive/folders/1Qf38Irv20-muMX_Q_6N1rPaDcCDqFEgV?usp=sharing" target="_blank" class="btn btn-warning"  type="button" style="font-size:20px;color:black;background-color:#c3c3c3;">view</a>
+  </div>
+</div>
+</div>
+
+
+<!--<div class="row" style="height:10px">-->
+<div class="col-xs-3 col-xs-offset-1   side"  style="height:200px;">
+  <div class="ques-image">
+  <div class="hero-text">
+    <h2>Question Papers</h2>
+    <a href="qnpapers.html" class="btn btn-warning"  target="_blank" type="button" style="font-size:20px;color:black;background-color:#c3c3c3;">view</a>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1   side" style="height:200px" >
+   <div class="ques-image">
+  <div class="hero-text">
+    <h2>Important Topics</h2>
+    <a href="impqns.html" class="btn btn-warning" target="_blank" type="button" style="font-size:20px;color:black;background-color:#c3c3c3">view</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--
+<div class="container-fluid" style="margin-top:100px;">
+<div class="row" style="margin-bottom:20px;">
+<div class=" col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/pres1.jpeg" alt="Paris" style="width:100%;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>PRESIDENT</h2>
+      <p>ECEA, COLLEGE OF ENGINEERING </p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px" >
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-bottom:20px;">
+<div class=" col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-bottom:20px;">
+<div class=" col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-bottom:20px;">
+<div class=" col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-xs-3 col-xs-offset-1 space">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>-->
+<div class="container" style="height:20px;padding-bottom:50px"><h1 style="color:white;"><strong>OFFICE BEARERS</h1></div>
+<div class="container" style="padding-top:170px;">
+ <div class="row" >
+    <div class="col-xs-4" >
+	<div class="thumbnail">
+       <img src="img/muttan.jpg" alt="president" style="width:100%; height:50%">
+		<center>  <h3>Dr.S Muttan</h3>
+		  <h5><strong>CHAIRMAN</strong></h5>
+          </center>
+        </div>
+		
+    </div>
+
+    <div class="col-xs-4" >
+	<div class="thumbnail">
+       <img src="img/nirmal.jpg" alt="president" style="width:100%; height:50%">
+		<center>  <h3>Dr.P Nirmal Kumar</h3>
+		  <h5><strong>TREASURER</strong></h5>
+          </center>
+        </div>
+		</div>
+		</div>
+  
+  <div class="row">
+    <div class="col-xs-4" >
+	<div class="thumbnail">
+       <img src="img/president.jpg" alt="president" style="width:100%; height:50%">
+		<center>  <h3>Pradeep Palanisamy</h3>
+		  <h5><strong>PRESIDENT</strong></h5>
+          </center>
+        </div>
+		
+    </div>
+    <div class="col-xs-4">
+      <div class="thumbnail">
+        
+          <img src="img/vpmale.jpg" alt="vp" style="width:100%">
+          <center>  <h3>Rahul Krishna</h3>
+		  <h5><strong>VICE PRESIDENT</strong></h5>
+          </center>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="thumbnail">
+        
+          <img src="img/vpfem.jpg" alt="vp" style="width:100%">
+          <center>  <h3>Akshara Viswanathan</h3>
+		  <h5><strong>VICE PRESIDENT</strong></h5>
+          </center>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4" >
+	<div class="thumbnail">
+       <img src="img/secmale.jpg" alt="president" style="width:100%; height:50%">
+		<center>  <h3>Prashanth</h3>
+		  <h5><strong>SECRETARY</strong></h5>
+          </center>
+        </div>
+		
+    </div>
+    <div class="col-xs-4">
+      <div class="thumbnail">
+        <img src="img/secfem.jpg" alt="Nature" style="width:100%">
+          <center> <h3>Swaathy Kumaran</h3>
+		  <h5><strong>SECRETARY</strong></h5>
+          </center>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="thumbnail">
+       
+          <img src="img/treasurer.jpg" alt="Fjords" style="width:100%">
+          <center>  <h3>Madhuvanthi Saravanan</h3>
+		  <h5><strong>DEPUTY TREASURER</strong></h5>
+          </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" >
+<h5 style="color:black;text-align:center"> <img src="img/copyright-symbol.png" height="12px" width="12px"> Copyright 2019 WebTech team ECEA</h5>
+</div>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
