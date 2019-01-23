@@ -9,9 +9,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!--Latest compiled and minified JavaScript--> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
 		<style>
+		html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+   
+	}
 		
 		.back-image{
     width:100%;
@@ -156,13 +162,10 @@
 	 }
 	
 	 .ques-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/qp3.jpg");
 
-    /* Set a specific height */
     height: 70%;
 
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -302,6 +305,11 @@ opacity:0.9;
 .thumbnail1{
 height:400px;
 width:300px}
+ 
+ .academics{
+ height:200px;
+ }
+ 
 
 
 
@@ -311,31 +319,7 @@ width:300px}
  
 
 <body >
-<!--<div class="container-fluid" style="background-color:#FF782E">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; DASHBOARD</span>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
-</div>-->
 <div class="container-fluid bg">
 <div class="container-fluid">
 <div class="row">
@@ -356,7 +340,7 @@ function closeNav() {
 
 </div>
 <div class="container-fluid">
-<div class="danger">
+<div class="danger abouts">
  <h1><strong><center>ABOUT US<center></strong></h1>
 <center><h4>ECEA is an embodiment and the working node that connects budding electronics engineers within the department. ECEA is basically a student organisation under the supervision of our respected HOD Mr Muttan.
 Electronics and Communication, being a field that grabs the spotlight in core engineering has given impetus to the organisation and a vital role in bringing together engineers not only within the university, but across colleges all over India.
@@ -393,10 +377,10 @@ introduced to their department and their department seniors. It enables freshers
 </h3></center>
 </div>
 <hr>
-<div class="container" style="height:20px;"><h1 style="color:white"><strong>ACADEMICS</h1></div>
-<div class="container-fluid" style="margin-top:100px;height:7.5%">
+<div class="container academics-title" style="height:20px;padding-bottom:60px;"><h1 style="color:white"><strong>ACADEMICS</h1></div>
 
-<div class="row" style="height:10px;"  >
+
+<div class="row" style="height:10px;padding-right:50px;"  >
 
 
 <!--<div class="col-xs-5 col-xs-offset-1   side" style="height:200px; " >
@@ -407,7 +391,7 @@ introduced to their department and their department seniors. It enables freshers
   </div>
 </div>
 </div>-->
-<div class="col-xs-3 col-xs-offset-1   side" style="height:200px">
+<div class="col-xs-3 col-xs-offset-1  side academics" style="height:200px;width:100%;" >
    <div class="ques-image">
   <div class="hero-text">
     <h2>Subjectwise Notes</h2>
@@ -418,7 +402,7 @@ introduced to their department and their department seniors. It enables freshers
 
 
 <!--<div class="row" style="height:10px">-->
-<div class="col-xs-3 col-xs-offset-1   side"  style="height:200px;">
+<div class="col-xs-3 col-xs-offset-1   side academics" style="height:200px;" >
   <div class="ques-image">
   <div class="hero-text">
     <h2>Question Papers</h2>
@@ -426,7 +410,7 @@ introduced to their department and their department seniors. It enables freshers
   </div>
 </div>
 </div>
-<div class="col-xs-3 col-xs-offset-1   side" style="height:200px" >
+<div class="col-xs-3 col-xs-offset-1   side academics"  style="height:200px;" >
    <div class="ques-image">
   <div class="hero-text">
     <h2>Important Topics</h2>
@@ -435,183 +419,14 @@ introduced to their department and their department seniors. It enables freshers
 </div>
 </div>
 </div>
-</div>
 
 
 
-<!--
-<div class="container-fluid" style="margin-top:100px;">
-<div class="row" style="margin-bottom:20px;">
-<div class=" col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img/pres1.jpeg" alt="Paris" style="width:100%;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>PRESIDENT</h2>
-      <p>ECEA, COLLEGE OF ENGINEERING </p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px" >
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="row" style="margin-bottom:20px;">
-<div class=" col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="row" style="margin-bottom:20px;">
-<div class=" col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="row" style="margin-bottom:20px;">
-<div class=" col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-xs-3 col-xs-offset-1 space">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
-    </div>
-    <div class="flip-box-back">
-      <h2>Paris</h2>
-      <p>What an amazing city</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-</div>-->
-<div class="container" style="height:20px;padding-bottom:50px"><h1 style="color:white;"><strong>OFFICE BEARERS</h1></div>
+<div class="container ob-title" style="height:20px;padding-bottom:50px"><h1 style="color:white;"><strong>OFFICE BEARERS</h1></div>
 <div class="container" style="padding-top:170px;">
- <div class="row" >
-    <div class="col-xs-4" >
-	<div class="thumbnail">
+ <div class="row ob1" >
+    <div class="col-xs-4 ob" >
+	<div class="thumbnail kv">
        <img src="img/muttan.jpg" alt="president" style="width:100%; height:50%">
 		<center>  <h3>Dr.S Muttan</h3>
 		  <h5><strong>CHAIRMAN</strong></h5>
@@ -620,8 +435,8 @@ introduced to their department and their department seniors. It enables freshers
 		
     </div>
 
-    <div class="col-xs-4" >
-	<div class="thumbnail">
+    <div class="col-xs-4 ob" >
+	<div class="thumbnail kv">
        <img src="img/nirmal.jpg" alt="president" style="width:100%; height:50%">
 		<center>  <h3>Dr.P Nirmal Kumar</h3>
 		  <h5><strong>TREASURER</strong></h5>
@@ -631,7 +446,7 @@ introduced to their department and their department seniors. It enables freshers
 		</div>
   
   <div class="row">
-    <div class="col-xs-4" >
+    <div class="col-xs-4 ob" >
 	<div class="thumbnail">
        <img src="img/president.jpg" alt="president" style="width:100%; height:50%">
 		<center>  <h3>Pradeep Palanisamy</h3>
@@ -640,7 +455,7 @@ introduced to their department and their department seniors. It enables freshers
         </div>
 		
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-4 ob">
       <div class="thumbnail">
         
           <img src="img/vpmale.jpg" alt="vp" style="width:100%">
@@ -649,7 +464,7 @@ introduced to their department and their department seniors. It enables freshers
           </center>
       </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-4 ob">
       <div class="thumbnail">
         
           <img src="img/vpfem.jpg" alt="vp" style="width:100%">
@@ -660,7 +475,7 @@ introduced to their department and their department seniors. It enables freshers
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-4" >
+    <div class="col-xs-4 ob" >
 	<div class="thumbnail">
        <img src="img/secmale.jpg" alt="president" style="width:100%; height:50%">
 		<center>  <h3>Prashanth</h3>
@@ -669,7 +484,7 @@ introduced to their department and their department seniors. It enables freshers
         </div>
 		
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-4 ob">
       <div class="thumbnail">
         <img src="img/secfem.jpg" alt="Nature" style="width:100%">
           <center> <h3>Swaathy Kumaran</h3>
@@ -677,8 +492,8 @@ introduced to their department and their department seniors. It enables freshers
           </center>
       </div>
     </div>
-    <div class="col-xs-4">
-      <div class="thumbnail">
+    <div class="col-xs-4 ob">
+      <div class="thumbnail ">
        
           <img src="img/treasurer.jpg" alt="Fjords" style="width:100%">
           <center>  <h3>Madhuvanthi Saravanan</h3>
